@@ -48,7 +48,7 @@ WCHAR *helpstr[] =
     L"\x0000"
   },
   {
-    L"exit     - Exit shell               sysinfo  - Dump system information\n"
+    L"exit     - Exit shell               info  - system information\n"
     L"lm       - List modules             vid      - Test screen output\n"
     L"lp       - List processes           move X Y - Move file X to Y\n"
     L"\n"
@@ -129,7 +129,7 @@ RtlClipProcessMessage(PCHAR Command)
         //
         RtlCliListProcesses();
     }
-    else if (!_strnicmp(Command, "sysinfo", 7))
+    else if (!_strnicmp(Command, "info", 7))
     {
         //
         // Dump System Information (sysinfo)
